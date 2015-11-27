@@ -1,0 +1,49 @@
+body {
+  font-family: Arial;
+}
+
+li {
+  height: 11em;
+  float: left;
+  overflow: auto;
+  list-style: none;
+  margin: 0em;
+  margin-bottom: -1em;
+  margin-top: 0em;
+}
+
+#code {
+  text-align: right;
+}
+
+.ticket {
+  background: url('/tshirt_7l_2014.png') left no-repeat;
+  background-size: 6em auto;
+  background-position: 1em 1em;
+  -webkit-print-color-adjust: exact;
+  border-style: solid;
+  border-width: 1px;
+  width: 16em;
+  height: 10em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.person {
+  width: 12em;
+  border: 1px;
+}
+
+#fortune {
+  font-size: .5em;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+li { page-break-inside:auto }
+table { page-break-inside:auto }
+tr    { page-break-inside:avoid; page-break-after:auto }
