@@ -8,7 +8,8 @@ li {
   overflow: auto;
   list-style: none;
   margin: 0em;
-  margin-bottom: -1em;
+  margin-bottom: 0em;
+  margin-left: 0em;
   margin-top: 0em;
 }
 
@@ -17,18 +18,17 @@ li {
 }
 
 .ticket {
-  background: url('/tshirt_7l_2014.png') left no-repeat;
-  background-size: 6em auto;
-  background-position: 1em 1em;
+  background-size: 2em auto;
+  background-position: 0em 0em;
   -webkit-print-color-adjust: exact;
   border-style: solid;
   border-width: 1px;
   width: 16em;
   height: 10em;
-  padding-left: 1em;
   padding-right: 1em;
-  padding-top: 1em;
+  padding-left: 0.5em;
   padding-bottom: 1em;
+  vertical-align: top;
 }
 
 .person {
@@ -44,6 +44,6 @@ li {
   left: 0;
 }
 
-li { page-break-inside:auto }
-table { page-break-inside:auto }
-tr    { page-break-inside:avoid; page-break-after:auto }
+li { page-break-inside:avoid; }
+table { page-break-inside:auto; }
+tr    { page-break-inside:avoid; page-break-after:auto; }
