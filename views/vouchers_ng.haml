@@ -1,0 +1,52 @@
+%ul
+  - @vouchers.each do |voucher|
+    %li.voucher.ng
+      %table
+        %tr
+          %td.person
+            %table
+              %tr
+                %td
+                  %small
+                    Name: _______________
+                %td
+              %tr
+                %td
+                  %small
+                    Seminar: _____________
+                %td
+              %tr
+                %td
+                  %small
+                    Datum: _______________
+                %td
+              %tr
+                %td
+                  %small
+                    ="Code: #{voucher.code.gsub('"', '')}"
+                %td
+          %td.ticket
+            %br
+            gültig/valid:
+            %b #{$duration}
+            %br
+            %small
+              verfällt/expires:
+              %b #{$expiry}
+            %br
+            %br
+            #code
+              ="Internet-Code: #{voucher.code.gsub('"', '')}"
+            %br
+            %small
+              Login at
+              %b
+                http://intranet.7l
+            %br
+            %br
+            #fortune
+              =voucher.fortune
+              %br
+              %small (The quotes are taken randomly from a database)
+            -#%small
+            -#  If login form does not show up automatically, visit http://intranet.7l
